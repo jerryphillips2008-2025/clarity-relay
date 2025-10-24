@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "regions": ["iad1"], 
+  "regions": ["iad1"],
   "functions": {
     "api/**/*.js": {
       "runtime": "nodejs18.x",
@@ -9,9 +9,5 @@
   },
   "builds": [
     { "src": "api/**/*.js", "use": "@vercel/node" }
-  ],
-  "env": {
-    "CLARITY_PROJECT_ID": "@clarity_project_id",
-    "CLARITY_API_TOKEN": "@clarity_api_token"
-  }
+  ]
 }
